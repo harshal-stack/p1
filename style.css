@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 10px;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
+.logo img {
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+}
+.logo h2 {
+  cursor: pointer;
+}
+.logo h2:hover {
+  color: gray;
+  transition: all 0.2s linear;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  margin: 0 10px;
+  font-weight: 600;
+}
+nav a:hover {
+  color: gray;
+  transition: all 0.1s linear;
+}
+.icon {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav-close{
+  display: none;
+}
+
+/* reponsive layout */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    position: absolute;
+    display: grid;
+    top: 7%;
+    margin-left: 500px;
+  }
+
+  .activate {
+    margin-left: 0px;
+    transition: all 0.5s linear;
+  }
+
+  .mobile-nav-close{
+    display: block;
+    
+  }
+
+  .navbar a {
+    margin: 10px 10px;
+  }
+
+
+  /* .navbar a ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: red;
+  } */
+
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 28px;
+  }
+  .mobile-nav {
+    display: block;
+    margin: 0 22px;
+    cursor: pointer;
+  }
+}
