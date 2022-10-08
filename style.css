@@ -35,13 +35,15 @@ body {
 nav a {
   text-decoration: none;
   color: white;
-  font-size: larger;
+  font-size: medium;
   margin: 0 10px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 nav a:hover {
   color: gray;
   transition: all 0.1s linear;
+  
 }
 .icon {
   margin: 0 5px;
@@ -53,6 +55,35 @@ nav a:hover {
 .mobile-nav-close{
   display: none;
 }
+.about{
+  color: white;
+  font-family: 'Cardo', serif;
+  width: 50%;
+  text-align: center;
+  font-size: x-large;
+  margin: 3% auto;
+
+}
+
+.word{background-color: #27A776;}
+
+.about p{
+  font-weight: 500;
+}
+
+
+.about-button{
+  width: 18rem;
+  height: 2.5rem;
+  margin-top: 25px;
+  background-color: #27A776;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 
 /* reponsive layout */
 
@@ -61,6 +92,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0px;
   }
 
   .navbar {
@@ -71,8 +103,13 @@ nav a:hover {
   }
 
   .activate {
-    margin-left: 0px;
+    margin-left: -8px;
     transition: all 0.5s linear;
+    background-color: #252424;
+    /* padding: 12% 131px; */
+    z-index: 100;
+    width: 100%;
+    height: 43%;
   }
 
   .mobile-nav-close{
@@ -81,7 +118,11 @@ nav a:hover {
   }
 
   .navbar a {
-    margin: 10px 10px;
+    margin: 10px 24px;
+    display: block;
+  }
+  .navbar a:hover{
+    color:#27A776
   }
 
 
@@ -98,11 +139,40 @@ nav a:hover {
   .social-icons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 0 28px;
   }
   .mobile-nav {
     display: block;
     margin: 0 22px;
+    cursor: pointer;
+  }
+
+  .about{
+    color: white;
+    font-family: 'Cardo', serif;
+    width: 90%;
+    text-align: center;
+    font-size: medium;
+    margin: 15% auto;
+  
+  }
+  .about p {
+    width: 96%;
+    font-size: small;
+    text-align: center;
+    margin: 25px 0px;
+  }
+
+  .about-button{
+    width: 16rem;
+    height: 2.5rem;
+    margin-top: 5px;
+    background-color: #27A776;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
     cursor: pointer;
   }
 }
