@@ -50,7 +50,7 @@ nav a:hover {
   cursor: pointer;
 }
 .mobile-nav {
-  display: none;
+  display: block;
 }
 .mobile-nav-close{
   display: none;
