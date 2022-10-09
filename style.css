@@ -145,7 +145,7 @@ nav a:hover {
     margin: 0 28px;
   }
   .mobile-nav {
-    display: block;
+    display: none;
     margin: 0 22px;
     cursor: pointer;
   }
