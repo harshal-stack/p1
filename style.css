@@ -39,24 +39,10 @@ nav a {
   margin: 0 10px;
   font-weight: 600;
   text-transform: uppercase;
-  position:"relative";
 }
-
-nav a: before {
-content:"";
-position:"absolute";
-top:0;
-left:0;
-width:0%
-Height:2px
-background-colour:Orange;
-transition:all 2s linear
-}
-nav a: before:hover {
+nav a:hover {
   color: gray;
   transition: all 0.1s linear;
-  Width:100%
-  
 }
 .icon {
   margin: 0 5px;
@@ -65,39 +51,79 @@ nav a: before:hover {
 .mobile-nav {
   display: none;
 }
-.mobile-nav-close{
+.mobile-nav-close {
   display: none;
 }
-.about{
+.about {
   color: white;
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
   width: 50%;
   text-align: center;
   font-size: x-large;
   margin: 3% auto;
-
 }
 
-.word{background-color: #27A776;}
+.word {
+  background-color: #27a776;
+}
 
-.about p{
+.about p {
   font-weight: 500;
 }
 
-
-.about-button{
+.about-button {
   width: 18rem;
   height: 2.5rem;
   margin-top: 25px;
-  background-color: #27A776;
+  background-color: #27a776;
   color: white;
   font-weight: 600;
   font-size: 17px;
   border-radius: 5px;
-  border:none;
   cursor: pointer;
 }
-
+/* gallery start from here */
+.images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  margin: 0px 20px;
+}
+.img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.img:hover {
+  transform: scale(0.8) rotate(-15deg);
+}
+.full-img {
+  height: 69vh;
+  width: 75%;
+  z-index: 100;
+  top: 63%;
+  left: 11%;
+  display: none;
+  position: absolute;
+}
+.box{
+  height: 69vh;
+  width: 75%;
+  z-index: 100;
+  top: 63%;
+  left: 11%;
+  display: none;
+  position: absolute;
+}
+.arrow{
+  position: fixed;
+  display: block;
+  bottom: 5%;
+  right: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
 
 /* reponsive layout */
 
@@ -127,19 +153,17 @@ nav a: before:hover {
     margin-top: 0px;
   }
 
-  .mobile-nav-close{
+  .mobile-nav-close {
     display: block;
-    
   }
 
   .navbar a {
     margin: 10px 24px;
     display: block;
   }
-  .navbar a:hover{
-    color:#27A776
+  .navbar a:hover {
+    color: #27a776;
   }
-
 
   /* .navbar a ::before {
     content: "";
@@ -163,14 +187,13 @@ nav a: before:hover {
     cursor: pointer;
   }
 
-  .about{
+  .about {
     color: white;
-    font-family: 'Cardo', serif;
+    font-family: "Cardo", serif;
     width: 90%;
     text-align: center;
     font-size: medium;
     margin: 15% auto;
-  
   }
   .about p {
     width: 96%;
@@ -179,15 +202,31 @@ nav a: before:hover {
     margin: 25px 0px;
   }
 
-  .about-button{
+  .about-button {
     width: 16rem;
     height: 2.5rem;
     margin-top: 5px;
-    background-color: #27A776;
+    background-color: #27a776;
     color: white;
     font-weight: 600;
     font-size: 17px;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
   }
+  .images{
+    display: block;
+    margin: -15px 20px;
+  }
+ .img{
+  margin: 10px 0px;
+ }
+ .arrow{
+  position: fixed;
+  bottom: 4%;
+  margin-right: 30px;
+  right: 0%;
+  cursor: pointer;
+  display: none;
+ }
 }
