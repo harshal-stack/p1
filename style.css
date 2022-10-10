@@ -39,10 +39,23 @@ nav a {
   margin: 0 10px;
   font-weight: 600;
   text-transform: uppercase;
+  position:"relative";
 }
-nav a:hover {
+
+nav a: before {
+content:"";
+position:"absolute";
+top:0;
+left:0;
+width:0%
+Height:2px
+background-colour:Orange;
+transition:all 2s linear
+}
+nav a: before:hover {
   color: gray;
   transition: all 0.1s linear;
+  Width:100%
   
 }
 .icon {
