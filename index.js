@@ -21,42 +21,28 @@ function fullimage(pic) {
 
 let button = document.querySelector(".arrow")
 
-window.onscroll = function(){
+window.onscroll = function () {
     scrollFunction();
 };
 
-function scrollFunction(){
-    if(document.body.scrollTop >20 || document.documentElement.scrollTop > 20){
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         button.style.display = "block"
     }
-    else{
+    else {
         button.style.display = "none"
     }
 }
 
-function totop(){
-    document.body.scrollTop =0;
-    document.documentElement.scrollTop=0;
+function totop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 
 
-// window.onscroll = function () {
-//     scrollFunction();
-//   };
-  
-//   function scrollFunction() {
-//     if (
-//       document.body.scrollTop > 20 ||
-//       document.documentElement.scrollTop > 20
-//     ) {
-//       button.style.display = "block";
-//     } else {
-//       button.style.display = "none";
-//     }
-//   }
-//   // When the user clicks on the button, scroll to the top of the document
-
-//   function totop() {
-//     document.body.scrollTop = 0;
-//     document.documentElement.scrollTop = 0;
-//   }
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });

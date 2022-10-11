@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
@@ -14,19 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Cardo&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+
+   
+    
+    <title>PhotoFolio</title>
   </head>
   <body>
     <header>
       <div class="main">
-        <div class="logo">
-          <img class="logoicon" src="img/camera.png" alt="" srcset="" />
+        <div class="logo animate__tada">
+          <img class="logoicon animate__tada " src="img/camera.png" alt="" srcset="" />
           <h2>PhotoFolio</h2>
         </div>
         <nav class="navbar">
-          <a href="#">Home</a>
+          <a class="animate__tada" href="#">Home</a>
           <a href="#">about</a>
-          <a href="#">gallery</a>
+          <a href="single-gallery.html">gallery</a>
           <a href="#">services</a>
           <a href="#">contact</a>
         </nav>
@@ -277,5 +281,6 @@
     </svg>
     </header>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
